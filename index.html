@@ -1,0 +1,687 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>巴黎 11 日行程</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400&family=Noto+Sans+TC:wght@300;400;700&family=Noto+Serif+TC:wght@400;700&family=Caveat:wght@400;700&display=swap">
+<style>
+:root{
+  color-scheme:light;
+  /* 背景色（每區一個整片單色） */
+  --terra:#B9643F; --blue:#56739A; --cocoa:#5B4636; --burg:#5A1E24; --olive:#8C8A2E;
+  /* 紙張與文字 */
+  --paper:#EEEAE0; --linen:#CFC6B8; --ink:#2A1E1A; --inkblue:#1F3A5F;
+  --ink-2:#5E5049; --ink-3:#8A7C72; --rule:rgba(42,30,26,.16);
+  --serif:"Fraunces","Georgia","Noto Serif TC",serif;
+  --sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+  --hand:"Caveat","Klee One","Noto Sans TC",cursive;
+  --shadow:0 1px 1px rgba(42,30,26,.10),0 6px 16px rgba(42,30,26,.12);
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --bg:var(--terra);
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg)}
+body{color:var(--ink);font-family:var(--sans);font-weight:400;font-size:14px;line-height:1.9;-webkit-text-size-adjust:100%}
+button{font:inherit;color:inherit}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.hi{width:1em;height:1em;flex:0 0 auto;vertical-align:-.15em;fill:none;stroke:currentColor;stroke-width:1.5}
+
+/* ---------- 背景：整片單色＋低對比材質（麂皮／亞麻） ---------- */
+.view{min-height:100vh;position:relative;background-color:var(--vbg);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .16 -.02'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url%28%23n%29'/%3E%3C/svg%3E")}
+#home{--vbg:var(--terra);--accent:var(--olive)}
+#itinerary{--vbg:var(--cocoa);--accent:var(--burg)}
+#french{--vbg:var(--blue);--accent:var(--burg)}
+body.v-home{--bg:var(--terra)} body.v-itinerary{--bg:var(--cocoa)} body.v-french{--bg:var(--blue)}
+
+/* ---------- 紙張物件 ---------- */
+.paper{position:relative;background-color:var(--paper);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .32  0 0 0 0 .24  0 0 0 0 .18  0 0 0 .10 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url%28%23n%29'/%3E%3C/svg%3E");color:var(--ink);box-shadow:var(--shadow)}
+.linen{background-color:var(--linen)}
+/* 撕紙邊（左側） */
+.torn-l{margin-left:10px}
+.torn-l::before{content:"";position:absolute;top:0;bottom:0;left:-9px;width:10px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='64'%3E%3Cpolygon points='10%2C0 3.8%2C0.0 6.1%2C5.2 4.0%2C10.1 2.4%2C15.5 4.6%2C20.5 2.0%2C26.7 2.0%2C30.9 5.0%2C37.1 6.4%2C40.3 4.8%2C47.1 2.3%2C52.6 4.1%2C55.7 2.5%2C58.9 1.7%2C62.9 3.8%2C64 10%2C64' fill='%23EEEAE0'/%3E%3C/svg%3E") left top/10px 64px repeat-y}
+.torn-b{margin-bottom:10px}
+.torn-b::after{content:"";position:absolute;left:0;right:0;bottom:-9px;height:10px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='10'%3E%3Cpolygon points='0%2C0 0.0%2C7.7 5.1%2C6.7 10.1%2C6.8 14.9%2C4.9 21.9%2C8.5 28.3%2C7.0 32.5%2C4.6 36.7%2C3.9 42.7%2C5.5 49.1%2C5.4 56.0%2C7.7 59.0%2C4.5 64%2C5.9 64%2C0' fill='%23EEEAE0'/%3E%3C/svg%3E") left top/64px 10px repeat-x}
+/* 紙膠帶 */
+.tape{position:absolute;width:74px;height:22px;background:rgba(207,198,184,.78);box-shadow:0 1px 1px rgba(42,30,26,.08);z-index:3}
+/* 圖釘 */
+.pin{position:absolute;top:-7px;left:50%;width:14px;height:14px;margin-left:-7px;border-radius:50%;background:var(--accent);box-shadow:0 2px 3px rgba(42,30,26,.35),inset -2px -2px 0 rgba(42,30,26,.25);z-index:4}
+
+/* ---------- 物件入場：由下往上，帶一點旋轉回正 ---------- */
+.obj{--r:0deg;transform:rotate(var(--r));transition:transform .8s var(--ease)}
+.view.enter .obj{animation:slideUp .9s var(--ease) both;animation-delay:calc(var(--i,0) * 90ms)}
+@keyframes slideUp{from{transform:translateY(36px) rotate(calc(var(--r) + 3deg));opacity:.35}to{transform:rotate(var(--r));opacity:1}}
+@media (hover:hover){.obj.tilt:hover{transform:rotate(calc(var(--r) + 1deg))}}
+/* 照片顯影 */
+.photo{position:relative;overflow:hidden;background:#d8d0c3}
+.photo img{display:block;width:100%;height:auto;max-width:100%;filter:grayscale(.85) sepia(.12) contrast(1.04)}
+.photo::after{content:"";position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.4' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .2  0 0 0 0 .18  0 0 0 0 .16  0 0 0 .5 -.1'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url%28%23n%29'/%3E%3C/svg%3E");mix-blend-mode:multiply;opacity:.55;pointer-events:none}
+.view.enter .photo img,.photo img.dev{animation:develop 1s var(--ease) both;animation-delay:.25s}
+@keyframes develop{from{filter:grayscale(1) brightness(1.6) contrast(.55) blur(1.5px)}to{filter:grayscale(.85) sepia(.12) contrast(1.04)}}
+
+/* 拍立得 */
+.polaroid{background:var(--paper);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .32  0 0 0 0 .24  0 0 0 0 .18  0 0 0 .10 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url%28%23n%29'/%3E%3C/svg%3E");padding:10px 10px 0;box-shadow:var(--shadow)}
+.polaroid figcaption{font-family:var(--hand);font-size:20px;line-height:1;text-align:center;padding:10px 4px 12px;color:var(--ink-2)}
+/* 卡紙框 */
+.mat{padding:7px;background:var(--paper);box-shadow:inset 0 0 0 1px rgba(42,30,26,.08),var(--shadow)}
+
+/* 郵戳 */
+.postmark{position:relative;display:inline-flex;align-items:center;gap:6px;color:var(--ink)}
+.pm-ring{width:86px;height:86px;border-radius:50%;border:2px solid currentColor;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1;position:relative}
+.pm-ring::before{content:"";position:absolute;inset:4px;border-radius:50%;border:1px solid currentColor;opacity:.7}
+.pm-top,.pm-bot{font-family:var(--serif);font-size:9px;letter-spacing:2px;text-transform:uppercase}
+.pm-mid{font-family:var(--serif);font-weight:900;font-size:22px;letter-spacing:-.5px;margin:3px 0 2px}
+.pm-waves{width:70px;height:40px;opacity:.75}
+.inked{opacity:.88}
+
+/* 便利貼（手寫） */
+.sticky{background-color:var(--linen);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .32  0 0 0 0 .24  0 0 0 0 .18  0 0 0 .10 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url%28%23n%29'/%3E%3C/svg%3E");padding:16px 18px 18px;box-shadow:var(--shadow);font-family:var(--hand);font-size:19px;line-height:1.45;color:var(--ink)}
+.sticky b{font-weight:700}
+
+/* 小標籤（資訊層，不歪斜） */
+.label{display:inline-flex;align-items:center;gap:4px;padding:3px 6px 4px;border:1px solid var(--ink-2);border-radius:0;color:var(--ink-2);font-size:12px;font-weight:400;letter-spacing:0;line-height:1.3;white-space:nowrap}
+.label .hi{width:12px;height:12px}
+.label.booked,.label.pass{border:0;border-radius:3px;padding:4px 8px;color:var(--paper);font-weight:700}
+.label.booked{background:var(--burg)}
+.label.pass{background:var(--terra)}
+.label.booked .hi,.label.pass .hi{display:none}
+.link{display:inline-flex;align-items:center;gap:4px;font-size:12px;letter-spacing:.6px;color:var(--ink);text-decoration:underline;text-decoration-style:dotted;text-underline-offset:4px;text-decoration-color:var(--ink-3);background:none;border:0;padding:0;cursor:pointer}
+.link .hi{width:13px;height:13px}
+.link:hover{text-decoration-style:solid}
+
+/* 標題 */
+.en-title{font-family:var(--serif);font-weight:900;letter-spacing:-.02em;line-height:.95}
+.zh-title{font-family:var(--sans);font-weight:700;letter-spacing:.12em}
+.kicker{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:.3px}
+
+/* ================= HOME（v48：依 Figma 78:372 稿） ================= */
+.home{max-width:440px;margin:0 auto;padding:28px 16px 56px;display:grid;gap:28px}
+.card-sh{box-shadow:0 1px 3px rgba(42,30,26,.15),0 1px 2px rgba(42,30,26,.30)}
+/* 今日卡 */
+.today{position:relative;padding:30px 24px;display:grid;gap:24px;cursor:pointer;box-shadow:0 4px 12px rgba(42,30,26,.18)}
+.today:hover{box-shadow:0 1px 1px rgba(42,30,26,.12),0 10px 24px rgba(42,30,26,.2)}
+.t-meta{display:grid;gap:16px;justify-items:start;padding-right:86px}
+.tagline{display:flex;gap:6px;flex-wrap:wrap}
+.today .facts{display:flex;gap:clamp(16px,6vw,28px);white-space:nowrap;font-size:13px;color:var(--ink-2)}
+.today .facts div{display:flex;align-items:center;gap:6px}
+.today .facts .hi{width:16px;height:16px}
+.today .facts span{line-height:1.3}
+.today .facts b{display:block;color:var(--ink);font-weight:700;font-size:16px;font-variant-numeric:tabular-nums}
+.today .facts small{display:block;font-size:11px;color:var(--ink-3)}
+.datepick{position:absolute;top:10px;right:8px;cursor:pointer;transform:rotate(-15deg)}
+.datepick select{position:absolute;inset:0;opacity:0;cursor:pointer;font-size:16px;width:100%}
+.datepick .pm-ring{width:84px;height:84px;color:var(--ink);border-width:1.5px}
+.datepick .pm-ring::before{display:none}
+.datepick .pm-mid{font-weight:700;font-size:21px}
+.datepick .pm-waves{display:none}
+.t-photo{position:relative;margin:0}
+.t-photo .photo{aspect-ratio:322/214;background:var(--linen)}
+.t-photo .photo img{width:100%;height:100%;object-fit:cover}
+.t-cap{position:absolute;right:-8px;bottom:-14px;background:#fff;padding:6px 10px;font-size:13px;line-height:1.7;color:var(--ink-2);transform:rotate(10deg);box-shadow:0 1px 3px rgba(42,30,26,.15),0 1px 2px rgba(42,30,26,.30);z-index:2}
+.t-text{display:grid;gap:12px;justify-items:start}
+.today h2{margin:0;font-size:21px;line-height:1.3;letter-spacing:.04em}
+.chain{margin:0;font-size:13px;line-height:1.7;color:var(--ink-2)}
+.chain span{white-space:nowrap}
+.chain .dot{color:var(--ink-3);padding:0 4px}
+.today .go{font-size:13px}
+/* 拼貼：住宿＋法語＋願望清單 */
+.collage{position:relative;height:452px}
+.collage .card{position:absolute;text-align:left;border:0;margin:0;font:inherit;color:inherit}
+.c-stay{left:33%;top:10px;width:189px;--r:3deg;padding:0 0 16px}
+.c-stay .photo{aspect-ratio:189/107;background:#fff}
+.c-stay .photo img{width:100%;height:100%;object-fit:cover}
+.c-stay .txt{padding:8px 16px 0;color:var(--olive);display:grid;gap:2px}
+.c-stay b{font-size:12px}
+.c-stay p{margin:0;font-size:11px;line-height:1.5}
+.c-stay .link{color:var(--olive);text-decoration-color:currentColor;margin-top:6px}
+.c-note{width:150px;padding:18px 14px 18px 18px;display:grid;gap:6px;justify-items:start}
+.c-note b{font-size:13px;font-weight:700}
+.c-note p{margin:0;font-size:11px;line-height:1.7}
+.c-note .link{font-size:11px;color:inherit;text-decoration-color:currentColor}
+.c-fr{left:5%;top:231px;--r:-2deg;color:var(--burg);cursor:pointer}
+.c-wish{left:50%;top:332px;--r:11deg;color:var(--inkblue)}
+.c-wish .link{cursor:default;opacity:.85}
+/* 當地最新資訊 */
+.clip{padding:22px 20px 18px;--r:-1deg;background-color:#fff}
+.clip-head{display:flex;align-items:center;justify-content:space-between;gap:8px;border-bottom:2px solid var(--ink);padding-bottom:8px}
+.clip-head h3{margin:0;font-size:21px;font-weight:700;letter-spacing:.04em;line-height:1.2}
+.clip-head small{font-size:11px;color:var(--ink-3)}
+.newslist{list-style:none;margin:0;padding:0}
+.news{padding:12px 0;border-bottom:1px solid var(--linen);display:grid;gap:6px;justify-items:start}
+.news a{display:block;font-weight:700;font-size:15px;line-height:1.6;text-decoration:none;color:var(--ink)}
+.news a:hover{text-decoration:underline;text-decoration-color:var(--ink-3);text-underline-offset:3px}
+.news p{margin:0;width:100%;font-size:12px;line-height:1.7;color:var(--ink-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.clip-foot{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:12px 0 0;font-size:11px;color:var(--ink-3)}
+.clip-foot .link{color:var(--ink)}
+/* 行前小提醒 */
+.tips{color:#fff}
+.tips h4{margin:0 0 12px;font-size:21px;font-weight:700;letter-spacing:.04em;line-height:1.2}
+.tips ul{margin:0;padding:0;list-style:none}
+.tips li{font-size:15px;line-height:1.6;margin:0 0 2px}
+
+/* ================= ITINERARY ================= */
+.stampbar{position:fixed;left:0;right:0;bottom:0;padding-bottom:calc(12px + env(safe-area-inset-bottom,0px))!important;z-index:20;background-color:var(--cocoa);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .16 -.02'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url%28%23n%29'/%3E%3C/svg%3E");display:flex;align-items:center;gap:8px;padding:12px 12px 12px 16px;box-shadow:0 -1px 0 rgba(238,234,224,.15),0 -6px 16px rgba(0,0,0,.18)}
+.backbtn{flex:0 0 auto;width:40px;height:40px;border-radius:50%;border:1.5px solid var(--paper);background:transparent;color:var(--paper);display:flex;align-items:center;justify-content:center;cursor:pointer}
+.backbtn .hi{width:18px;height:18px}
+.stamps{flex:1;min-width:0;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding:4px 2px}
+.stamps::-webkit-scrollbar{display:none}
+.stamp{flex:0 0 auto;width:52px;height:52px;border-radius:50%;border:1.5px dashed rgba(238,234,224,.55);background:transparent;color:var(--paper);display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1;cursor:pointer;transition:transform .6s var(--ease),background .6s var(--ease)}
+.stamp b{font-family:var(--serif);font-weight:700;font-size:15px;letter-spacing:-.3px}
+.stamp small{font-family:var(--serif);font-size:9px;letter-spacing:1.5px;text-transform:uppercase;opacity:.8;margin-top:3px}
+.stamp[aria-selected="true"]{background:var(--paper);color:var(--burg);border:2px solid var(--burg);box-shadow:inset 0 0 0 3px var(--paper),inset 0 0 0 4px var(--burg)}
+.daywrap{max-width:720px;margin:0 auto;padding:28px 13px calc(110px + env(safe-area-inset-bottom,0px));display:grid}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.dayhero{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;min-height:164px}
+.dayhead{flex:0 0 auto;display:grid;justify-items:start;gap:8px;padding-bottom:22px;color:#D9CBB0}
+.dayhead .postmark{color:#D9CBB0}
+.dayhead .pm-ring{width:84px;height:84px;border-width:1.5px}
+.dayhead .pm-ring::before{display:none}
+.dayhead .pm-mid{font-weight:700;font-size:21px}
+.dayhead .en-title{font-size:21px;font-weight:700;line-height:1.1;margin:0}
+.dayhead h2{margin:0;font-size:16px;line-height:1.2;letter-spacing:.04em}
+.d-photo{margin:0 4px 0 0;flex:1 1 0;min-width:0;max-width:420px;--r:-8deg;box-shadow:0 1px 3px rgba(0,0,0,.15),0 1px 2px rgba(0,0,0,.30)}
+.d-photo .photo{aspect-ratio:170/138;background:var(--linen)}
+.d-photo .photo img{width:100%;height:100%;object-fit:cover}
+.daypage{width:100%;padding:12px 22px}
+.entries{list-style:none;margin:0;padding:0}
+.entry{display:grid;grid-template-columns:64px 1fr;gap:4px 14px;padding:18px 0;border-bottom:1px solid var(--rule)}
+.entry:last-child{border-bottom:0}
+.when{font-variant-numeric:tabular-nums;line-height:1.35;padding-top:2px}
+.when b{display:block;font-size:15px;font-weight:700;color:var(--ink)}
+.when span{display:block;font-size:12px;color:var(--ink-3)}
+.entry.is-booked .when b{color:var(--burg)}
+.e-top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+.e-name{margin:0;font-size:15px;font-weight:700;line-height:1.6;overflow-wrap:anywhere}
+.e-name small{display:block;font-family:var(--serif);font-style:italic;font-weight:400;font-size:13px;color:var(--ink-3);line-height:1.4}
+.e-labels{display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end;flex:0 0 auto}
+.e-desc{margin:6px 0 0;font-size:13px;font-weight:300;line-height:2;color:var(--ink-2);white-space:pre-line;overflow-wrap:anywhere}
+.e-alt{margin:4px 0 0;font-size:12px;color:var(--ink-3)}
+.e-alt b{color:var(--ink);font-weight:400}
+.entry .note{margin:10px 0 2px;--r:-1.2deg;font-size:18px;padding:12px 14px 13px;max-width:30em;white-space:pre-line}
+.entry:nth-child(even) .note{--r:1.3deg}
+.entry .link{margin-top:8px}
+.entry.tbd .e-name{color:var(--ink-3);font-weight:400}
+.source{color:rgba(238,234,224,.75);font-size:11px;text-align:center;line-height:1.8;max-width:30em}
+
+/* ================= FRENCH ================= */
+.frwrap{max-width:720px;margin:0 auto;padding:16px 16px 72px}
+.frtop{display:flex;align-items:center;gap:10px}
+.frtop .backbtn{border-color:var(--paper)}
+.frhead{text-align:center;color:var(--paper);padding:20px 0}
+.frhead h1{margin:0;font-size:16px;font-weight:700;letter-spacing:.04em;line-height:1.2}
+.cats{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding:2px 2px 14px;justify-content:safe center}
+.cats::-webkit-scrollbar{display:none}
+.cat{flex:0 0 auto;padding:6px 14px;border:1.5px solid rgba(238,234,224,.7);background:transparent;color:var(--paper);font-size:13px;letter-spacing:.12em;cursor:pointer;border-radius:2px}
+.cat[aria-selected="true"]{background:var(--paper);color:var(--inkblue);border-color:var(--paper);font-weight:700}
+.frpage{padding:22px 22px 12px}
+.frpage h2{margin:0 0 4px;text-align:center;color:var(--inkblue);font-size:15px;letter-spacing:.2em}
+.frlist{list-style:none;margin:0;padding:0}
+.fr{display:flex;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid var(--rule)}
+.fr:last-child{border-bottom:0}
+.fr div{flex:1;min-width:0}
+.fr .fw{margin:0;font-family:var(--serif);font-weight:700;font-size:18px;line-height:1.35;color:var(--inkblue);overflow-wrap:anywhere}
+.fr .zh{margin:2px 0 0;font-size:13px;font-weight:300;line-height:1.8;color:var(--ink-2)}
+.say{flex:0 0 40px;width:40px;height:40px;border-radius:50%;border:1.5px solid var(--inkblue);background:transparent;color:var(--inkblue);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .6s var(--ease),color .6s var(--ease)}
+.say .hi{width:18px;height:18px}
+.say:hover,.say.on{background:var(--inkblue);color:var(--paper)}
+.frnote{color:rgba(238,234,224,.85);font-size:11px;text-align:center;margin:18px auto 0;max-width:30em}
+
+/* ---------- 翻頁（換日／換章節） ---------- */
+html.turning,html.turning body{overflow-x:hidden}
+.flip-ov{position:fixed;inset:0;z-index:40;pointer-events:none;perspective:2000px;perspective-origin:0 50%;overflow:hidden}
+.flip-ov.under{z-index:38}
+.flip-page{transform-origin:left center;backface-visibility:hidden}
+.flip-out{animation:flipOut .85s var(--ease) both}
+.flip-in{position:relative;z-index:39;transform-origin:left center;backface-visibility:hidden;animation:flipIn .85s var(--ease) both}
+@keyframes flipOut{to{transform:perspective(2000px) rotateY(-100deg)}}
+@keyframes flipIn{from{transform:perspective(2000px) rotateY(-100deg)}to{transform:perspective(2000px) rotateY(0)}}
+
+/* ---------- RWD ---------- */
+@media (min-width:640px){
+  .daypage{padding:16px 40px}
+  .entry{grid-template-columns:84px 1fr}
+}
+@media (min-width:960px){
+  .home{max-width:960px;grid-template-columns:440px 420px;justify-content:center;column-gap:56px;align-items:start;padding-top:48px}
+  .home>.today{grid-row:1/span 3}
+}
+@media (prefers-reduced-motion:reduce){
+  .view.enter .obj,.view.enter .photo img,.photo img.dev,.flip-out,.flip-in{animation:none!important}
+  .obj{transition:none}
+}
+
+/* ================= 長輩友善字級（v55）：所有文字 ≥ 15px ================= */
+:root{--ink-3:#6E6058}
+body{font-size:16px}
+.e-desc,.fr .zh,.news p{font-weight:400}
+/* 郵戳：拿掉 PARIS 小字，星期放大 */
+.pm-top{display:none}
+.pm-bot{font-size:15px;letter-spacing:1px}
+.pm-mid{font-size:24px}
+.datepick .pm-ring{width:96px;height:96px}.datepick .pm-mid{font-size:24px}
+.dayhead .pm-ring{width:96px;height:96px}.dayhead .pm-mid{font-size:24px}
+/* 標籤、連結 */
+.label{font-size:15px;padding:3px 8px 4px}
+.label .hi{width:15px;height:15px}
+.link{font-size:15px}.link .hi{width:16px;height:16px}
+/* 首頁今日卡 */
+.t-meta{padding-right:100px}
+.today .facts{font-size:15px;gap:clamp(14px,5vw,28px)}
+.today .facts small{font-size:15px}
+.today .facts b{font-size:19px}
+.today .facts .hi{width:18px;height:18px}
+.t-cap{font-size:15px}
+.today h2{font-size:23px}
+.chain{font-size:16px;line-height:1.8}
+.today .go{font-size:16px}
+/* 拼貼卡片改成不會重疊的兩欄錯落 */
+.collage{height:auto;display:grid;grid-template-columns:1fr 1fr;gap:18px 14px;align-items:start;padding:6px 0 14px}
+.collage .card{position:relative;left:auto;top:auto}
+.c-stay{grid-column:1/-1;justify-self:end;width:78%;margin-right:4px}
+.c-stay .txt{padding:10px 16px 0;gap:4px}
+.c-stay b{font-size:17px}
+.c-stay p{font-size:15px}
+.c-note{width:auto;padding:18px 16px}
+.c-note b{font-size:17px}
+.c-note p{font-size:15px;line-height:1.6}
+.c-note .link{font-size:15px}
+.c-wish{--r:6deg;margin-top:40px}
+/* 新聞 */
+.clip-head h3{font-size:22px}
+.clip-head small{font-size:15px}
+.news a{font-size:17px}
+.news p{font-size:15px}
+.clip-foot{font-size:15px;flex-wrap:wrap}
+/* 小提醒 */
+.tips h4{font-size:22px}
+.tips li{font-size:17px}
+/* 行程頁底部日期列 */
+.stamp{width:64px;height:64px}
+.stamp b{font-size:17px}
+.stamp small{font-size:15px;letter-spacing:.5px;opacity:.9;margin-top:4px}
+.backbtn{width:48px;height:48px}
+.backbtn .hi{width:22px;height:22px}
+.daywrap{padding-bottom:calc(130px + env(safe-area-inset-bottom,0px))}
+.dayhead .en-title{font-size:25px}
+.dayhead h2{font-size:19px;line-height:1.35}
+/* 行程條目：時間欄加寬，標籤改到名稱下面 */
+.entry{grid-template-columns:72px 1fr;gap:4px 12px}
+.when b{font-size:18px}
+.when span{font-size:15px}
+.e-top{flex-direction:column;align-items:flex-start;gap:6px}
+.e-labels{justify-content:flex-start}
+.e-name{font-size:18px;line-height:1.5}
+.e-name small{font-size:15px}
+.e-desc{font-size:16px;line-height:1.85}
+.e-alt{font-size:15px}
+.source,.frnote{font-size:15px}
+/* 法語頁 */
+.frhead h1{font-size:19px}
+.cat{font-size:16px;padding:8px 16px}
+.frpage h2{font-size:17px}
+.fr .fw{font-size:21px}
+.fr .zh{font-size:16px}
+.say{flex:0 0 48px;width:48px;height:48px}
+.say .hi{width:22px;height:22px}
+@media (min-width:640px){.entry{grid-template-columns:90px 1fr}}
+.e-labels:empty{display:none}
+.home{grid-template-columns:minmax(0,1fr)}
+.today .facts{flex-wrap:wrap;row-gap:8px}
+.c-stay{width:74%;margin-right:0;justify-self:center}
+.c-wish{margin-right:6px}
+#home{overflow-x:clip}
+.cats{flex-wrap:wrap;justify-content:center;overflow:visible}
+@media (min-width:960px){.home{grid-template-columns:440px 420px}}
+
+/* v57：標題改 Noto Serif TC、時間欄 regular、今日卡圖片置頂 */
+.zh-title,.today h2,.clip-head h3,.tips h4,.dayhead h2,.frhead h1,.frpage h2,.c-note b,.c-stay b{font-family:"Noto Serif TC","Songti TC",serif;font-weight:700}
+.when b,.entry.is-booked .when b{font-weight:400}
+.t-meta{padding-right:0}
+.datepick{top:6px;right:4px;z-index:3}
+.tagline .label.day{background:#fff}
+.tips h4{padding-bottom:12px;margin-bottom:14px;border-bottom:1px solid rgba(255,255,255,.55)}
+
+/* v58：首頁區塊順序＝今日卡→新聞→住宿／法語／願望清單（滿版直排）→提醒 */
+.home{gap:40px}
+.collage{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;padding:0}
+.collage .card{width:100%;margin:0;justify-self:stretch}
+.c-stay{--r:1deg;padding:0}
+.c-stay .photo{aspect-ratio:370/180}
+.c-stay .txt{padding:16px 16px 20px;gap:8px}
+.c-note{padding:16px;gap:8px}
+.c-stay b,.c-note b{font-size:18px}
+.c-stay p,.c-note p{font-size:15px;line-height:1.55}
+.c-fr{--r:-1deg}
+.c-wish{--r:2deg;margin-top:0}
+.c-stay .link{margin-top:0}
+</style>
+
+<!-- ================= HOME ================= -->
+<section class="view" id="home" hidden>
+  <div class="home">
+    <article class="today paper obj" style="--i:1" id="h-page" data-go="itinerary" role="link" tabindex="0" aria-label="開啟完整行程表">
+      <figure class="t-photo"><div class="photo"><img id="h-img" alt="" width="1000" height="807"></div><figcaption class="t-cap" id="h-cap"></figcaption></figure>
+      <div class="t-meta">
+        <div class="tagline" id="h-tags"></div>
+        <div class="facts">
+          <div><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"/></svg><span><small>天氣 · 十月平均</small><b>9–16°C</b></span></div>
+          <div><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"/></svg><span><small>日落時間</small><b id="h-sun">18:58</b></span></div>
+        </div>
+      </div>
+      <label class="datepick" onclick="event.stopPropagation()">
+        <span class="postmark inked"><span class="pm-ring"><span class="pm-top">Paris</span><span class="pm-mid" id="h-date">10/17</span><span class="pm-bot" id="h-wd">sat</span></span></span>
+        <select id="h-select" aria-label="選擇日期"></select>
+      </label>
+      <div class="t-text">
+        <h2 class="zh-title" id="h-theme"></h2>
+        <p class="chain" id="h-chain"></p>
+        <span class="link go"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"/></svg>完整行程表</span>
+      </div>
+    </article>
+
+
+    <section class="clip paper card-sh obj tilt" style="--i:5" id="news" aria-labelledby="news-h">
+      <div class="clip-head"><h3 id="news-h">當地最新資訊</h3><small id="news-at"></small></div>
+      <ol class="newslist" id="news-list"></ol>
+      <p class="clip-foot"><span>巴黎即時新聞 · 來源 Sortir à Paris ·</span><a class="link" href="https://www.sortiraparis.com/zh/xiaoxi/zai-bali" target="_blank" rel="noopener">看全部<svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"/></svg></a></p>
+    </section>
+    <div class="collage">
+      <div class="card c-stay paper card-sh obj tilt" style="--i:2">
+        <div class="photo"><img src="img/hotel.jpg" alt="住宿客廳：圓木餐桌與黑框玻璃隔間" width="480" height="321" loading="lazy"></div>
+        <div class="txt"><b>住宿</b><p>巴黎市區</p></div>
+      </div>
+      <button class="card c-note c-fr paper card-sh obj tilt" style="--i:3" data-go="french">
+        <b>法語小學堂</b><p>打招呼、點餐、購物用得到的法文</p><span class="link">完整資訊<svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"/></svg></span>
+      </button>
+      <div class="card c-note c-wish paper card-sh obj tilt" style="--i:4">
+        <b>願望清單</b><p>必買零食與體驗 · 即將推出</p><span class="link" aria-disabled="true" title="即將推出">完整資訊<svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"/></svg></span>
+      </div>
+    </div>
+
+
+    <aside class="tips obj" style="--i:6">
+      <h4>行前小提醒</h4>
+      <ul>
+        <li>週日：多數商店休息，博物館照常開。</li>
+        <li>打招呼：進門先說 Bonjour！</li>
+        <li>小費：帳單已含服務費，零錢即可。</li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<!-- ================= ITINERARY ================= -->
+<section class="view" id="itinerary" hidden>
+  <nav class="stampbar" aria-label="日期">
+    <button class="backbtn" data-go="home" aria-label="回首頁"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"/></svg></button>
+    <div class="stamps" id="stamps" role="tablist"></div>
+  </nav>
+  <div class="daywrap" id="daywrap">
+    <div class="dayhero">
+      <header class="dayhead obj" style="--i:1" id="d-head"></header>
+      <figure class="d-photo obj" style="--i:2" id="d-pol"><div class="photo"><img id="d-img" alt="" width="1000" height="807"></div><figcaption class="vh" id="d-cap"></figcaption></figure>
+    </div>
+    <article class="daypage paper obj" style="--i:3">
+      <ol class="entries" id="d-list"></ol>
+    </article>
+  </div>
+</section>
+
+<!-- ================= FRENCH ================= -->
+<section class="view" id="french" hidden>
+  <div class="frwrap">
+    <div class="frtop"><button class="backbtn" data-go="home" aria-label="回首頁"><svg class="hi" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"/></svg></button></div>
+    <header class="frhead"><h1>法語小學堂 · 點喇叭聽發音</h1></header>
+    <div class="cats" id="cats" role="tablist" aria-label="情境"></div>
+    <article class="frpage paper obj" style="--i:1">
+      <h2 class="zh-title" id="fr-title">實用法文</h2>
+      <ul class="frlist" id="fr-list"></ul>
+    </article>
+    <p class="frnote" id="fr-note" hidden>喇叭會用裝置內建的法文語音播放；沒有法文語音的裝置可能聽不到。</p>
+  </div>
+</section>
+
+<script>
+const DAYS = [
+ {date:"10/17",w:"六",title:"抵達巴黎，街區初探",items:[
+  ["","下午","飯店 Check-in & 稍作休息","休息","回住宿放下行李稍作休息，適應時差。",null],
+  ["1","下午","證券交易所－皮諾收藏館（Bourse de Commerce – Pinault Collection）","博物館","證卷交易所","Bourse de Commerce Pinault Collection Paris"],
+  ["","晚餐","蒙托格伊街漫步（Rue Montorgueil）","景點","漫步著名徒步美食街，順遊 Stohrer 百年甜點店與 Cuvée Noire 外帶咖啡。\n＊可以買點麵包當隔天早餐","Rue Montorgueil Paris"]]},
+ {date:"10/18",w:"日",pass:1,title:"雕塑花園與大小皇宮",items:[
+  ["7","早上","羅丹美術館（Musée Rodin）","博物館","早上開門即入場，享受清晨幽靜的雕塑花園，欣賞《沉思者》、《地獄之門》及畢洪宅邸內的大理石雕塑。","Musée Rodin Paris","",1],
+  ["7","早上","榮軍院（Les Invalides）","博物館","沿羅丹美術館西側步行約 5 分鐘抵達。重點參觀金色圓頂教堂（Dôme des Invalides）內宏偉的拿破崙一世靈寢與地下墓室。","Les Invalides Paris","",1],
+  ["7","午餐","","景點","於榮軍院周邊小館或橋畔餐館享用午餐，隨後漫步跨越巴黎最華麗的青銅雕飾橋樑，拍攝遠處艾菲爾鐵塔的經典角度。","Pont Alexandre III Paris"],
+  ["8","下午","小皇宮（Petit Palais）","景點","過橋即抵達。免費參觀巴黎市立美術館常設展（含莫內、塞尚作品），並走進隱密的中庭環形花園池畔散步歇息。",null],
+  ["8","下午","巴黎大皇宮（Grand Palais）","景點","＊想看兒童館\n走至小皇宮正對面。欣賞歐洲最大的玻璃穹頂與新藝術風格鋼鐵結構，並至 Le Grand Café 感受精緻法式奢華沙龍氛圍。","Grand Palais Paris","",1],
+  ["","晚餐","Restaurant Panurge","餐飲","飯店附近的，哥哥找的。","Restaurant Panurge Paris"]]},
+ {date:"10/19",w:"一",pass:2,title:"婚紗拍攝與羅浮宮",items:[
+  ["1","上午 08:00","婚紗拍攝","景點","羅浮宮 > 公園 > 橋 > 鐵塔",null],
+  ["7","午餐","Les Cocottes","餐飲","在最終拍攝點（巴黎鐵塔）附近，米其林餐盤推薦、米其林一星大廚、可官網訂位。另一間店 Le Violon d’Ingres 有獲得米其林一星。","Les Cocottes Paris"],
+  ["1","下午 14:30","羅浮宮（Musée du Louvre）","博物館","預留 2.5 小時寬裕參觀《蒙娜麗莎》等珍品，含羅浮宮金字塔打卡。","Musée du Louvre Paris"],
+  ["16","晚餐","","餐飲","",null]]},
+ {date:"10/20",w:"二",pass:3,title:"凡爾賽宮與皇家宮殿",items:[
+  ["郊區","早上 10:00","凡爾賽宮（Château de Versailles）","宮殿","","Château de Versailles","",1],
+  ["郊區","午餐","O'Bottega Versailles","餐飲","","O'Bottega Versailles"],
+  ["1","下午","逛逛文青家用品","購物","Brigitte Tanaka、Astier de Villatte","Astier de Villatte Paris"],
+  ["1","下午茶","La Crème du Palais Royal","甜點咖啡","享用精緻甜點咖啡與長輩憩腳。","La Crème du Palais Royal Paris","The Coffee"],
+  ["2","下午","皇家宮殿拱廊（Galeries du Palais-Royal）","景點","在庭院與現代感的柱子拍照","Palais Royal Paris"],
+  ["2","下午","法國國家圖書館黎塞留館（BnF Richelieu）","景點","週一休館。\n脆推薦漂亮的圓形閱覽室建築，地下室有乾淨的免費廁所。","BnF Richelieu Paris"],
+  ["1","晚餐","Bistrot Victoires","餐飲","心甜推薦：油封鴨可以點、牛排不要點，洋蔥湯下午四點後才有","Bistrot Victoires Paris","Le Grand Colbert"]]},
+ {date:"10/21",w:"三",pass:4,title:"西堤島與左岸藝文",items:[
+  ["4","早上 08:30","巴黎聖母院（Cathédrale Notre-Dame de Paris）","景點","無法預約，需跨VPN，建議當天早點抵達才能登頂。","Cathédrale Notre-Dame de Paris"],
+  ["1","早上 09:30","聖徒禮拜堂（Sainte-Chapelle）","教堂","欣賞 15 扇絕美巨大且精緻的 13 世紀彩色玻璃窗。","Sainte-Chapelle Paris"],
+  ["5","早上","塞納河舊書攤（Les Bouquinistes）＆莎士比亞書店（Shakespeare and Company）","景點","","Shakespeare and Company Paris"],
+  ["6","午餐","Brasserie des Prés","餐飲","心甜推薦甜點布雷斯特，看起來很好吃！","Brasserie des Prés Paris","Les Antiquaires"],
+  ["7","下午 14:30","奧賽美術館（Musée d'Orsay）","博物館","舊火車站改建，欣賞莫內、梵谷等印象派名畫巨作。","Musée d'Orsay Paris"],
+  ["6","下午","花神咖啡館（Café de Flore）／Tanat - Victoria","甜點咖啡","左岸聖日耳曼最具代表性歷史咖啡館喝茶休息。","Café de Flore Paris"],
+  ["6","下午","花神附近小店走走","購物","Surprise / Marin Montagut / Fruttini / Chantelivre 書店 / La Trésorerie Rive Gauche 家用品買手店",null],
+  ["","晚餐","","",""," ",null]]},
+ {date:"10/22",w:"四",pass:5,title:"瑪黑慢遊與莫內睡蓮",items:[
+  ["瑪黑","早餐 10:00","Carré Pain de Mie","餐飲","IG 跟脆好多人推，生吐司看起來鬆軟！！推蝦排、法式吐司！！","Carré Pain de Mie Paris"],
+  ["瑪黑","上午 10:45","畢卡索美術館（Musée Picasso Paris）","博物館","直接帶通票到現場入場就好，不用在售票網站訂票，也不用付錢，參觀約 1.5–2 小時。","Musée Picasso Paris","",1],
+  ["瑪黑","早上","瑪黑區自由散步與購物（Le Marais）","購物","年輕人可逛 Merci、Fleux、Papier Tigre、Soeur；長輩可於 L'Ecritoire Paris 或公園坐坐。","Merci Paris Boulevard Beaumarchais"],
+  ["瑪黑","下午茶","Bachir / Sevenly Heart / MERLO CAFÉ","甜點咖啡","品嚐黎巴嫩開心果冰淇淋或於質感獨立咖啡館坐下休息。","Bachir Paris Rambuteau"],
+  ["1","下午 16:30","橘園美術館（Musée de l'Orangerie）","博物館","參觀莫內巨幅《睡蓮》系列連作，館內有充足椅子可坐著欣賞。","Musée de l'Orangerie Paris"],
+  ["","晚餐","早早回家，為明天儲備體力！","休息","",null]]},
+ {date:"10/23",w:"五",pass:6,title:"楓丹白露與鐵塔機位",items:[
+  ["","早上 09:30","楓丹白露宮（Château de Fontainebleau）","宮殿","【大眾運輸一日遊】法國歷代國王行宮內部導覽，步調放慢。","Château de Fontainebleau"],
+  ["","午餐","","餐飲","",null],
+  ["16","下午","夏樂宮（Palais de Chaillot）＆比爾哈凱姆橋（Pont de Bir-Hakeim）","景點","夏樂宮週二休。\n夏樂宮近距離觀賞鐵塔，漫步至《全面啟動》雙層鋼構橋樑合影。","Palais de Chaillot Paris"],
+  ["16","下午","建築與遺產城（Cité de l'Architecture et du Patrimoine）","景點","週二休，19:00 關門。\n一樓進門右手邊窗，超神機位！窗框構圖，艾菲爾鐵塔直接嵌在窗裡，復古感拉滿，隨手拍都是氛圍感大片！","Cité de l'architecture et du patrimoine Paris"],
+  ["","晚餐","早早回家，為明天儲備體力！","休息","",null,"Café 1902"]]},
+ {date:"10/24",w:"六",title:"聖米歇爾山遠行",items:[
+  ["","早上","聖米歇爾山山腳小鎮與修道院外觀（Mont-Saint-Michel）","近郊","【包車／巴士一日遊】參觀潮汐沙洲上的世界文化遺產建築。","Mont Saint-Michel"],
+  ["","午餐","","餐飲","",null],
+  ["","下午","聖米歇爾山修道院參觀（Abbaye du Mont-Saint-Michel）","教堂","參觀山頂雄偉哥德式修道院，階梯多可走走停停放慢腳步。",null],
+  ["","下午","山頂景觀咖啡館歇腳","甜點咖啡","於山頂景觀咖啡館喝咖啡欣賞海灣潮汐景觀。",null],
+  ["","晚餐","","餐飲","",null]]},
+ {date:"10/25",w:"日",title:"芭蕾日場與凱旋門",items:[
+  ["9","早餐","和平咖啡館（Café de la Paix）","餐飲","哥哥去過推～","Café de la Paix Paris"],
+  ["9","外帶咖啡","Cuvée Noire (Saint-Lazare)","甜點咖啡","順遊歌劇院周邊買杯外帶精品咖啡。","Cuvée Noire Saint-Lazare Paris"],
+  ["9","下午 14:30","加尼葉歌劇院芭蕾舞日場（Palais Garnier）","博物館","觀賞芭蕾舞日場，長輩能舒適坐著享受國際級表演。","Palais Garnier Paris"],
+  ["8","下午","凱旋門（Arc de Triomphe）＆漫步香榭麗舍大道（Champs-Élysées）","景點","香榭麗舍大道西端，登頂俯瞰 12 條大道放射交會。","Arc de Triomphe Paris"],
+  ["8","晚餐","Pedra Alta","餐飲","董冠媽推薦","Pedra Alta Paris Champs-Élysées"]]},
+ {date:"10/26",w:"一",title:"河谷購物村採買日",items:[
+  ["","早上","搭 RER A 去河谷購物村（La Vallée Village）","購物","露天精品 Outlet 採買精品，自由漫步。","La Vallée Village"],
+  ["","午餐","園區內各式餐館自由用餐","餐飲","",null],
+  ["","下午","園區內自由逛街與咖啡歇腳","甜點咖啡","",null],
+  ["","下午","搭 RER A 返回飯店擺放戰利品","休息","",null],
+  ["","晚餐","從超市買東西回家吃，或是去蒙托格伊街","餐飲","",null]]},
+ {date:"10/27",w:"二",title:"蒙馬特與最後巡禮",items:[
+  ["18","早餐 09:00","Pâtisserie Gilles Marchal","甜點咖啡","被譽為「巴黎最好吃之一」的瑪德蓮蛋糕（Madeleine）與可麗露（Cannelé）。","Pâtisserie Gilles Marchal Paris"],
+  ["18","上午","蒙馬特纜車（Funiculaire de Montmartre）與聖心堂（Basilique du Sacré-Cœur）","教堂","搭乘纜車直達山頂聖心堂（免爬樓梯）","Funiculaire de Montmartre"],
+  ["18","午餐 11:00","Le Relais Gascon","餐飲","以南法加斯柯尼（Gascony）地區的傳統鄉村菜餚聞名，氣氛輕鬆熱鬧，非常受年輕人與當地人歡迎。","Le Relais Gascon Paris","Le Consulat（畢卡索與梵谷曾頻繁光顧的百年建築）"],
+  ["9","下午","拉法葉百貨奧斯曼旗艦店（Galeries Lafayette Haussmann）","景點","巨大的拜占庭式彩色玻璃圓頂，非常華麗。","Galeries Lafayette Haussmann Paris"],
+  ["9","下午 15:20","花宮娜香水工作坊（Fragonard）","博物館","","Fragonard Musée du Parfum Paris"],
+  ["","晚餐","早早回家整理行李，在家溫馨用餐啦～","休息","",null]]}
+];
+const FR={
+ "打招呼":[["Bonjour","你好（白天問候）"],["Bonsoir","晚上好（傍晚後問候）"],["Merci beaucoup","非常感謝"],["S'il vous plaît","麻煩你／請"],["Excusez-moi","不好意思（引起注意、請人讓路）"],["Au revoir","再見"],["Bonne journée","祝你有美好的一天（離開店家時說）"]],
+ "用餐":[["Nous avons une réservation","我們有訂位"],["La carte, s'il vous plaît","請給我菜單"],["Le plat du jour","今日特餐"],["Une carafe d'eau, s'il vous plaît","請給我一壺自來水（免費）"],["L'addition, s'il vous plaît","請給我帳單"],["C'était délicieux !","很好吃！"]],
+ "咖啡廳":[["Un café, s'il vous plaît","一杯咖啡（法國的 café 是濃縮咖啡）"],["Un café crème","加奶咖啡（類似拿鐵）"],["Un chocolat chaud","一杯熱可可"],["Un croissant, s'il vous plaît","一個可頌"],["Sur place","內用"],["À emporter","外帶"]],
+ "購物":[["Je regarde seulement, merci","我只是看看，謝謝"],["Combien ça coûte ?","這個多少錢？"],["Je voudrais essayer ça","我想試穿這個"],["Vous avez une autre taille ?","有其他尺寸嗎？"],["Je peux payer par carte ?","可以刷卡嗎？"],["La détaxe, c'est possible ?","可以辦退稅嗎？"]],
+ "日常生活":[["Où sont les toilettes ?","廁所在哪裡？"],["Parlez-vous anglais ?","你會說英文嗎？"],["Je ne comprends pas","我聽不懂"],["Où est le métro ?","地鐵站在哪裡？"],["Un billet, s'il vous plaît","請給我一張票"],["Pouvez-vous nous prendre en photo ?","可以幫我們拍照嗎？"]]
+};
+const NEWS_FALLBACK=[{"id": "197669", "title": "巴黎本週四怎麼安排？10月8日的外出資訊與精選優惠", "summary": "本週四在巴黎及法蘭西島可以做些什麼？帶您瞭解當天的臨時活動、今日事件", "url": "https://www.sortiraparis.com/zh/xiaoxi/zai-bali/articles/197669-ba-li-ben-zhou-si-gai-zen-me-an-pai-2026nian10yue8ri-de-chu-xing-tui-jian-yu-you-hui-xin-xi", "kind": "活動", "order": 0}, {"id": "291320", "title": "地鐵、RER、Transilien：2026年10月5日至11日的示威與交通受擾", "summary": "巴黎及法蘭西島的公共交通在2026年10月5日至11日將出現擾動", "url": "https://www.sortiraparis.com/zh/xiaoxi/zai-bali/articles/291320-de-tie-rer-yutransilien-jiang-yin-shi-wei-huo-dong-er-chu-xian-rao-luan-shi-jian-wei2026nian10yue5ri-zhi11ri", "kind": "交通", "order": 1}, {"id": "332748", "title": "巴黎兩天內氣溫從25°C降到15°C：10月5日至11日的天氣週報", "summary": "巴黎與法蘭西島的天氣將在周初迎來今年夏季的最後一次回暖", "url": "https://www.sortiraparis.com/zh/xiaoxi/zai-bali/articles/332748-ba-li-zai-liang-tian-nei-qi-wen-you25-jiang-zhi15-10yue5ri-zhi11ri-de-yi-zhou-tian-qi-yu-bao", "kind": "天氣", "order": 2}, {"id": "334950", "title": "2026年冬令時調整：為何今年會提前這麼早？", "summary": "", "url": "https://www.sortiraparis.com/zh/xiaoxi/zai-bali/articles/334950-2026nian-dong-ling-shi-diao-zheng-wei-he-jin-nian-hui-yi-chang-ti-qian", "kind": "天氣", "order": 3}, {"id": "270094", "title": "法蘭西島交通：2026年10月10日至11日週末的交通擁堵與施工", "summary": "", "url": "https://www.sortiraparis.com/zh/xiaoxi/zai-bali/articles/270094-fa-lan-xi-dao-jiao-tong-ben-zhou-mo-2026nian10yue10ri-zhi11ri-de-jiao-tong-rao-dong-yu-shi-gong-qing-kuang", "kind": "交通", "order": 4}, {"id": "353491", "title": "巴黎10月8日示威：本週四地鐵站將關閉", "summary": "RATP宣佈將關閉三座地鐵站", "url": "https://www.sortiraparis.com/zh/xiaoxi/zai-bali/articles/353491-ba-li10yue8ri-shi-wei-ben-zhou-si-de-tie-zhan-jiang-guan-bi", "kind": "交通", "order": 5}, {"id": "353539", "title": "10月9日罷工：巴黎至瑟堡之間的列車將取消", "summary": "巴黎-卡昂-舍爾堡線將於2026年10月9日取消多趟列車", "url": "https://www.sortiraparis.com/zh/xiaoxi/zai-bali/articles/353539-10yue9ri-ba-gong-ba-li-yu-se-bao-zhi-jian-de-lie-che-quan-bu-ting-yun", "kind": "交通", "order": 6}, {"id": "351232", "title": "巴黎聖母院：教皇的聖盃及聖物在大教堂展出", "summary": "", "url": "https://www.sortiraparis.com/zh/xiaoxi/zai-bali/articles/351232-ba-li-sheng-mu-yuan-li-ao-shi-si-shi-jiao-huang-de-sheng-bei-yu-shi-wu-zai-da-jiao-tang-zhan-chu", "kind": "景點", "order": 7}, {"id": "353501", "title": "文森森林半程馬拉松（2026）：10月18日封路", "summary": "將關閉巴黎第十二區文森森林內的多條道路", "url": "https://www.sortiraparis.com/zh/xiaoxi/zai-bali/articles/353501-ba-li-wei-kang-sen-sen-lin-gong-yuan-ban-cheng-ma-la-song-2026nian-jiang-yu10yue18ri-feng-lu", "kind": "交通", "order": 8}, {"id": "353430", "title": "凡爾賽宮因停電而關閉，現已重新對外開放", "summary": "", "url": "https://www.sortiraparis.com/zh/xiaoxi/zai-bali/articles/353430-fan-er-sai-gong-yin-ting-dian-er-guan-bi-xian-yi-zhong-xin-dui-wai-kai-fang", "kind": "景點", "order": 9}, {"id": "229644", "title": "巴黎地鐵、RER、封閉、施工與示威的最新訊息（每日更新）", "summary": "一覽即得，隨時掌握巴黎最新的交通動態", "url": "https://www.sortiraparis.com/zh/xiaoxi/zai-bali/articles/229644-ba-li-de-tie-rer-lie-che-yun-shu-wang-luo", "kind": "交通", "order": 10}, {"id": "353282", "title": "德拉科尼德流星雨2026：十月何時出現，以及如何觀測？", "summary": "10月6日至10日重回法蘭西島大區的夜空", "url": "https://www.sortiraparis.com/zh/xiaoxi/zai-bali/articles/353282-draconides-2026-he-shi-yi-ji-ru-he-guan-ce-shi-yue-de-liu-xing-yu", "kind": "活動", "order": 11}];
+
+const BOOKED=["婚紗拍攝","羅浮宮","凡爾賽宮","奧賽美術館","橘園美術館","楓丹白露宮","加尼葉歌劇院","花宮娜香水工作坊","巴黎聖母院","聖徒禮拜堂"];
+
+const PASS=["羅丹美術館","榮軍院","巴黎大皇宮","羅浮宮","凡爾賽宮","巴黎聖母院","聖徒禮拜堂","奧賽美術館","畢卡索美術館","橘園美術館","楓丹白露宮","建築與遺產城"];
+
+const IMG={"10/17":{src:"img/1017.jpg",alt:"證券交易所復古版畫插畫"},"10/18":{src:"img/1018.jpg",alt:"羅丹美術館與沉思者復古版畫插畫"},"10/19":{src:"img/1019.jpg",alt:"艾菲爾鐵塔復古版畫插畫"},"10/20":{src:"img/1020.jpg",alt:"凡爾賽宮復古版畫插畫"},"10/21":{src:"img/1021.jpg",alt:"巴黎聖母院復古版畫插畫"},"10/22":{src:"img/1022.jpg",alt:"橘園美術館復古版畫插畫"},"10/23":{src:"img/1023.jpg",alt:"楓丹白露宮復古版畫插畫"},"10/24":{src:"img/1024.jpg",alt:"聖米歇爾山復古版畫插畫"},"10/25":{src:"img/1025.jpg",alt:"加尼葉歌劇院復古版畫插畫"},"10/26":{src:"img/1026.jpg",alt:"河谷購物村復古版畫插畫"},"10/27":{src:"img/1027.jpg",alt:"聖心堂與蒙馬特纜車復古版畫插畫"}};
+
+function sunset(m,d){
+  const lat=48.8566,lon=2.3522,r=Math.PI/180;
+  const N=Math.floor(275*m/9)-2*Math.floor((m+9)/12)+d-30;
+  const lh=lon/15,t=N+(18-lh)/24,M=0.9856*t-3.289;
+  const L=(M+1.916*Math.sin(M*r)+0.020*Math.sin(2*M*r)+282.634+360)%360;
+  let RA=(Math.atan(0.91764*Math.tan(L*r))/r+360)%360;
+  RA=(RA+Math.floor(L/90)*90-Math.floor(RA/90)*90)/15;
+  const sd=0.39782*Math.sin(L*r),cd=Math.cos(Math.asin(sd));
+  const H=Math.acos((Math.cos(90.833*r)-sd*Math.sin(lat*r))/(cd*Math.cos(lat*r)))/r/15;
+  const UT=((H+RA-0.06571*t-6.622-lh)%24+24)%24;
+  const off=(m===10&&d>=25)||m>10?1:2; // 2026 夏令時間 10/25 結束
+  let x=UT+off, hh=Math.floor(x), mm=Math.round((x-hh)*60); if(mm===60){hh++;mm=0}
+  return hh+":"+String(mm).padStart(2,"0");
+}
+const ICON={"map-pin": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z\"/>  <path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z\"/>", "clock": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z\"/>", "ticket": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 0 1 0 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 0 1 0-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375Z\"/>", "home-modern": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205 3 1m1.5.5-1.5-.5M6.75 7.364V3h-3v18m3-13.636 10.5-3.819\"/>", "sun": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z\"/>", "moon": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z\"/>", "newspaper": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z\"/>", "speaker-wave": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M19.114 5.636a9 9 0 0 1 0 12.728M16.463 8.288a5.25 5.25 0 0 1 0 7.424M6.75 8.25l4.72-4.72a.75.75 0 0 1 1.28.53v15.88a.75.75 0 0 1-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.009 9.009 0 0 1 2.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75Z\"/>", "chevron-left": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M15.75 19.5 8.25 12l7.5-7.5\"/>", "calendar-days": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z\"/>", "light-bulb": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18\"/>", "sparkles": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z\"/>", "arrow-up-right": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25\"/>", "bookmark": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z\"/>", "arrow-path": "<path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99\"/>"};
+const ico=n=>`<svg class="hi" viewBox="0 0 24 24" aria-hidden="true">${ICON[n]}</svg>`;
+const EN={"日":"sun","一":"mon","二":"tue","三":"wed","四":"thu","五":"fri","六":"sat"};
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const isBooked=n=>!!n&&BOOKED.some(b=>n.startsWith(b));
+const isPass=n=>!!n&&PASS.some(b=>n.startsWith(b));
+const splitName=n=>{const m=n.match(/^([^（]+)（([^（）]+)）$/);return m?[m[1],m[2]]:[n,""];};
+const shortName=n=>n.replace(/（[^（）]*）/g,"").trim();
+const NOTE_RE=/推薦|推～|推蝦|哥哥|董冠媽|心甜|IG|脆/;
+let cur=0;
+function save(){try{localStorage.setItem("paris-day",cur)}catch(e){}}
+
+/* ---------- HOME ---------- */
+$("h-select").innerHTML=DAYS.map((d,i)=>`<option value="${i}">${d.date} (${EN[d.w]}) · Day ${i+1}</option>`).join("");
+function renderHome(){
+  const d=DAYS[cur],[m,dd]=d.date.split("/").map(Number);
+  $("h-select").value=cur;
+  $("h-date").textContent=d.date; $("h-wd").textContent=EN[d.w];
+  $("h-sun").textContent=sunset(m,dd);
+  $("h-tags").innerHTML=`<span class="label day">${ico("calendar-days")}Day ${cur+1}</span>${d.pass?`<span class="label pass">${ico("ticket")}通票 Day ${d.pass}</span>`:""}`;
+  $("h-theme").textContent=d.title;
+  $("h-chain").innerHTML=d.items.filter(it=>it[2]).map(it=>`<span>${esc(shortName(it[2]))}</span>`).join('<span class="dot">·</span> ');
+  const im=IMG[d.date]; const img=$("h-img");
+  if(im){img.src=im.src;img.alt=im.alt;$("h-cap").textContent=im.alt.replace("復古版畫插畫","");}
+}
+$("h-select").addEventListener("change",e=>{const n=+e.target.value,dir=n<cur?"back":"fwd";pageTurn($("h-page"),dir,()=>{cur=n;save();renderHome();replayPhoto("h-img");},()=>$("h-page"));});
+function replayPhoto(id){const i=$(id);i.classList.remove("dev");void i.offsetWidth;i.classList.add("dev");}
+
+/* ---------- ITINERARY ---------- */
+$("stamps").innerHTML=DAYS.map((d,i)=>`<button class="stamp" role="tab" id="s${i}" data-i="${i}" aria-selected="false" aria-label="${d.date} Day ${i+1}"><b>${d.date}</b><small>${EN[d.w]}</small></button>`).join("");
+function renderDay(){
+  const d=DAYS[cur];
+  document.querySelectorAll(".stamp").forEach(b=>b.setAttribute("aria-selected",b.dataset.i==cur));
+  const im=IMG[d.date]; if(im){$("d-img").src=im.src;$("d-img").alt=im.alt;$("d-cap").textContent=im.alt.replace("復古版畫插畫","");}
+  $("d-head").innerHTML=`<span class="postmark inked"><span class="pm-ring"><span class="pm-top">Paris</span><span class="pm-mid">${d.date}</span><span class="pm-bot">${EN[d.w]}</span></span></span>
+    <div class="en-title">Day ${String(cur+1).padStart(2,"0")}</div>
+    <h2 class="zh-title">${esc(d.title)}</h2>
+    ${d.pass?`<span class="label pass">${ico("ticket")}通票 Day ${d.pass}</span>`:""}`;
+  $("d-list").innerHTML=d.items.map(it=>{
+    const [arr,slot,name,cat,note,q,alt]=it; const tbd=!name;
+    const tm=slot.match(/(\d{1,2}:\d{2})$/); const word=slot.replace(/\s*\d{1,2}:\d{2}$/,"");
+    const bk=isBooked(name), ps=isPass(name);
+    const [cn,orig]=tbd?["待補充",""]:splitName(name);
+    const n=(note||"").trim(); const asNote=n&&NOTE_RE.test(n);
+    const map=q&&q.trim()?`<a class="link" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}" target="_blank" rel="noopener">${ico("map-pin")}Google 地圖</a>`:"";
+    return `<li class="entry${bk?" is-booked":""}${tbd?" tbd":""}">
+      <div class="when">${tm?`<b>${tm[1].padStart(5,"0")}</b><span>${esc(word)}</span>`:`<b>${esc(word)}</b>`}</div>
+      <div>
+        <div class="e-top"><p class="e-name">${esc(cn)}${orig?`<small>${esc(orig)}</small>`:""}</p>
+          <span class="e-labels">${bk?`<span class="label booked">${ico("bookmark")}已預約</span>`:""}${ps?`<span class="label pass">${ico("ticket")}通票</span>`:""}</span></div>
+        ${n?`<p class="e-desc">${esc(n)}</p>`:""}
+        ${alt?`<p class="e-alt">備案：<b>${esc(alt)}</b></p>`:""}
+        ${map}
+      </div></li>`;}).join("");
+  const s=$("s"+cur); if(s) s.scrollIntoView({block:"nearest",inline:"center"});
+}
+$("stamps").addEventListener("click",e=>{const b=e.target.closest(".stamp");if(!b)return;const n=+b.dataset.i;if(n===cur)return;
+  const dir=n<cur?"back":"fwd";const el=$("daywrap");
+  pageTurn(el,dir,()=>{cur=n;save();renderDay();window.scrollTo({top:0,behavior:"instant"});replayPhoto("d-img");},()=>el);});
+
+/* ---------- FRENCH ---------- */
+const CAT=Object.keys(FR); let catI=0;
+$("cats").innerHTML=CAT.map((c,i)=>`<button class="cat" role="tab" data-c="${i}" aria-selected="${i===0}">${c}</button>`).join("");
+$("cats").addEventListener("click",e=>{const b=e.target.closest(".cat");if(!b)return;catI=+b.dataset.c;renderFr();});
+function renderFr(){
+  document.querySelectorAll(".cat").forEach(b=>b.setAttribute("aria-selected",b.dataset.c==catI));
+  $("fr-title").textContent=CAT[catI];
+  $("fr-list").innerHTML=FR[CAT[catI]].map(([f,z])=>`<li class="fr"><div><p class="fw" lang="fr">${esc(f)}</p><p class="zh">${esc(z)}</p></div><button class="say" data-say="${esc(f)}" aria-label="播放發音：${esc(f)}">${ico("speaker-wave")}</button></li>`).join("");
+}
+const canSpeak="speechSynthesis" in window;
+if(!canSpeak) $("fr-note").hidden=false, $("fr-note").textContent="這個瀏覽器不支援語音播放，可以對照文字唸。";
+$("fr-list").addEventListener("click",e=>{const b=e.target.closest(".say");if(!b||!canSpeak)return;
+  try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(b.dataset.say);u.lang="fr-FR";u.rate=.85;
+    const v=speechSynthesis.getVoices().find(v=>/^fr/i.test(v.lang));if(v)u.voice=v;
+    b.classList.add("on");u.onend=u.onerror=()=>b.classList.remove("on");speechSynthesis.speak(u);}catch(err){b.classList.remove("on")}});
+
+/* ---------- NEWS（資料庫每天更新；讀不到時用內建擷取） ---------- */
+function fmtAt(iso){const d=new Date(iso);if(isNaN(d))return "";const p=n=>String(n).padStart(2,"0");return `${d.getMonth()+1}/${d.getDate()} ${p(d.getHours())}:${p(d.getMinutes())} 更新`;}
+function renderNews(items,at){
+  $("news-list").innerHTML=items.slice(0,3).map(n=>`<li class="news"><span class="label">${esc(n.kind||"消息")}</span><a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a>${n.summary?`<p>${esc(n.summary)}</p>`:""}</li>`).join("");
+  if(at) $("news-at").textContent=fmtAt(at);
+}
+renderNews(NEWS_FALLBACK,"2026-10-08T09:45:00+08:00");
+(async()=>{try{
+  if(!window.claude||!window.claude.use) return;
+  const db=await window.claude.use("db"); if(!db) return;
+  let at=null,items=null;
+  db.doc("data/news").onSnapshot(s=>{const d=s.data();if(d&&d.updatedAt){at=d.updatedAt;if(items)renderNews(items,at);}},()=>{});
+  db.collection("data/news/items").orderBy("order").limit(8).onSnapshot(s=>{const r=s.docs.map(x=>x.data()).filter(Boolean);if(r.length){items=r;renderNews(items,at);}},()=>{});
+}catch(e){}})();
+
+/* ---------- 翻頁 ---------- */
+const RM=matchMedia("(prefers-reduced-motion: reduce)");
+function snap(el){
+  const r=el.getBoundingClientRect();
+  const ov=document.createElement("div"); ov.className="flip-ov"; ov.setAttribute("aria-hidden","true");
+  ov.style.backgroundColor="transparent";
+  const c=el.cloneNode(true); c.removeAttribute("id"); c.hidden=false;
+  c.querySelectorAll("[id]").forEach(n=>n.removeAttribute("id"));
+  c.classList.add("flip-page");
+  Object.assign(c.style,{position:"absolute",left:r.left+"px",top:r.top+"px",width:r.width+"px",margin:"0"});
+  if(c.classList.contains("view")) c.classList.remove("enter");
+  ov.appendChild(c); document.body.appendChild(ov); return {ov,c};
+}
+function pageTurn(oldEl,dir,mutate,getNew){
+  if(RM.matches||!oldEl){mutate();return;}
+  const {ov,c}=snap(oldEl);
+  document.documentElement.classList.add("turning");
+  mutate();
+  const finish=()=>{ov.remove();document.documentElement.classList.remove("turning");};
+  if(dir==="fwd"){c.classList.add("flip-out");c.addEventListener("animationend",finish,{once:true});}
+  else{ov.classList.add("under");const n=getNew();n.classList.remove("flip-in");void n.offsetWidth;n.classList.add("flip-in");
+    n.addEventListener("animationend",ev=>{if(ev.target!==n)return;n.classList.remove("flip-in");finish();});}
+  setTimeout(()=>{if(ov.isConnected)finish();},1500);
+}
+
+/* ---------- ROUTER ---------- */
+const VIEWS=["home","itinerary","french"]; let curView=null;
+function enter(v){const el=$(v);el.classList.remove("enter");void el.offsetWidth;el.classList.add("enter");}
+function show(v){
+  if(!VIEWS.includes(v)) v="home";
+  const prev=curView; curView=v;
+  const apply=()=>{
+    VIEWS.forEach(x=>$(x).hidden=x!==v);
+    document.body.className="v-"+v;
+    if(v==="home") renderHome(); if(v==="itinerary") renderDay(); if(v==="french") renderFr();
+    window.scrollTo({top:0,behavior:"instant"});
+    enter(v);
+  };
+  if(prev&&prev!==v) pageTurn($(prev), v==="home"?"back":"fwd", apply, ()=>$(v)); else apply();
+}
+document.addEventListener("click",e=>{const g=e.target.closest("[data-go]");if(!g)return;if(e.target.closest("select"))return;e.preventDefault();location.hash=g.dataset.go;});
+document.addEventListener("keydown",e=>{if((e.key==="Enter"||e.key===" ")&&e.target.matches&&e.target.matches("[data-go][role=link]")){e.preventDefault();location.hash=e.target.dataset.go;}});
+addEventListener("hashchange",()=>show(location.hash.slice(1)));
+const now=new Date(),key=`${now.getMonth()+1}/${now.getDate()}`;
+const ti=now.getFullYear()===2026?DAYS.findIndex(d=>d.date===key):-1;
+if(ti>=0)cur=ti;else{try{const s=parseInt(localStorage.getItem("paris-day"),10);if(s>=0&&s<DAYS.length)cur=s;}catch(e){}}
+show(location.hash.slice(1)||"home");
+</script>
+
+</body></html>
